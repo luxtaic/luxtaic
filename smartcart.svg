@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1A15" />
+      <stop offset="100%" stop-color="#0B0F14" />
+    </linearGradient>
+
+    <filter id="neonPulseGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&amp;family=Inter:wght@600;700;800;900&amp;display=swap');
+    text { font-family: 'Inter', sans-serif; }
+    .mono { font-family: 'Fira Code', monospace; }
+
+    /* Pulsing Green LED */
+    .led-pulse {
+      animation: ledBlink 1.6s ease-in-out infinite alternate;
+    }
+    @keyframes ledBlink {{
+      0% { opacity: 0.3; transform: scale(0.85); }
+      100% { opacity: 1; transform: scale(1.2); filter: drop-shadow(0 0 6px #00F5A0); }
+    }}
+
+    /* Animated Traveling Photon on Circuit Line */
+    .photon-dash {
+      stroke-dasharray: 8 16;
+      animation: photonFlow 2s linear infinite;
+    }
+    @keyframes photonFlow {
+      to { stroke-dashoffset: -48; }
+    }
+
+    /* Node Hover & Entrance */
+    .node-box {
+      transition: transform 0.2s ease;
+    }
+    .node-box:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+
+  <rect width="818" height="278" x="1" y="1" rx="16" fill="url(#scBg)" stroke="#00F5A0" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Header with Pulsing BUILDING NOW Status -->
+  <g transform="translate(24, 30)">
+    <rect width="135" height="26" rx="13" fill="rgba(0, 245, 160, 0.12)" stroke="#00F5A0" stroke-width="1" />
+    <circle cx="14" cy="13" r="4.5" fill="#00F5A0" class="led-pulse" />
+    <text x="26" y="17" font-size="11" font-weight="900" fill="#00F5A0" letter-spacing="1.2">BUILDING NOW</text>
+
+    <text x="155" y="18" font-size="16" font-weight="900" fill="#EAF2F2">SmartCart-v1 🛒</text>
+    <text x="818 - 48" y="18" text-anchor="end" font-size="11" font-weight="700" fill="#00D9FF" class="mono">ACTIVE DEVELOPMENT</text>
+  </g>
+
+  <!-- Truthful Description -->
+  <g transform="translate(24, 76)">
+    <text x="0" y="0" font-size="13" fill="#EAF2F2" font-weight="600">
+      Smart inventory, billing and stock management system for small grocery and retail businesses.
+    </text>
+    <text x="0" y="20" font-size="11.5" fill="#8B949E">
+      Automating checkout, stock deductions, and real-time replenishment analytics using Android Studio &amp; Firebase.
+    </text>
+  </g>
+
+  <!-- Animated Data Flow Sequence: IDE -> ANDROID -> FIREBASE -> SMARTCART -->
+  <g transform="translate(24, 125)">
+    <!-- Circuit Connection Lines with Traveling Photons -->
+    <line x1="120" y1="28" x2="210" y2="28" stroke="#00F5A0" stroke-width="2" opacity="0.3" />
+    <line x1="120" y1="28" x2="210" y2="28" stroke="#00F5A0" stroke-width="2.5" class="photon-dash" />
+
+    <line x1="330" y1="28" x2="420" y2="28" stroke="#00D9FF" stroke-width="2" opacity="0.3" />
+    <line x1="330" y1="28" x2="420" y2="28" stroke="#00D9FF" stroke-width="2.5" class="photon-dash" />
+
+    <line x1="550" y1="28" x2="640" y2="28" stroke="#00F5A0" stroke-width="2" opacity="0.3" />
+    <line x1="550" y1="28" x2="640" y2="28" stroke="#00F5A0" stroke-width="2.5" class="photon-dash" />
+
+    <!-- Node 1: IDE -->
+    <g class="node-box" transform="translate(0, 0)">
+      <rect width="120" height="56" rx="8" fill="rgba(0, 245, 160, 0.08)" stroke="#00F5A0" stroke-width="1.2" />
+      <text x="60" y="24" text-anchor="middle" font-size="10.5" font-weight="800" fill="#8B949E">ENVIRONMENT</text>
+      <text x="60" y="42" text-anchor="middle" font-size="12" font-weight="800" fill="#00F5A0">Android Studio</text>
+    </g>
+
+    <!-- Node 2: ANDROID (Java) -->
+    <g class="node-box" transform="translate(210, 0)">
+      <rect width="120" height="56" rx="8" fill="rgba(0, 217, 255, 0.08)" stroke="#00D9FF" stroke-width="1.2" />
+      <text x="60" y="24" text-anchor="middle" font-size="10.5" font-weight="800" fill="#8B949E">CORE ARCH</text>
+      <text x="60" y="42" text-anchor="middle" font-size="12" font-weight="800" fill="#00D9FF">Java • M3 XML</text>
+    </g>
+
+    <!-- Node 3: FIREBASE -->
+    <g class="node-box" transform="translate(420, 0)">
+      <rect width="130" height="56" rx="8" fill="rgba(245, 158, 11, 0.08)" stroke="#F59E0B" stroke-width="1.2" />
+      <text x="65" y="24" text-anchor="middle" font-size="10.5" font-weight="800" fill="#8B949E">CLOUD DB</text>
+      <text x="65" y="42" text-anchor="middle" font-size="12" font-weight="800" fill="#F59E0B">Firestore &amp; Auth</text>
+    </g>
+
+    <!-- Node 4: SMARTCART -->
+    <g class="node-box" transform="translate(640, 0)">
+      <rect width="130" height="56" rx="8" fill="rgba(0, 245, 160, 0.15)" stroke="#00F5A0" stroke-width="1.5" />
+      <text x="65" y="24" text-anchor="middle" font-size="10.5" font-weight="800" fill="#00F5A0">FINAL ENGINE</text>
+      <text x="65" y="42" text-anchor="middle" font-size="12.5" font-weight="900" fill="#EAF2F2">SmartCart POS</text>
+    </g>
+  </g>
+
+  <!-- Feature Matrix Pills -->
+  <g transform="translate(24, 212)">
+    <g transform="translate(0, 0)">
+      <rect width="180" height="28" rx="6" fill="rgba(0, 245, 160, 0.06)" stroke="#00F5A0" stroke-width="0.8" />
+      <text x="90" y="18" text-anchor="middle" font-size="10.5" font-weight="700" fill="#EAF2F2">⚡ Auto Stock Deduction</text>
+    </g>
+    <g transform="translate(192, 0)">
+      <rect width="170" height="28" rx="6" fill="rgba(0, 217, 255, 0.06)" stroke="#00D9FF" stroke-width="0.8" />
+      <text x="85" y="18" text-anchor="middle" font-size="10.5" font-weight="700" fill="#EAF2F2">🧾 Real-Time Billing POS</text>
+    </g>
+    <g transform="translate(374, 0)">
+      <rect width="180" height="28" rx="6" fill="rgba(0, 245, 160, 0.06)" stroke="#00F5A0" stroke-width="0.8" />
+      <text x="90" y="18" text-anchor="middle" font-size="10.5" font-weight="700" fill="#EAF2F2">⚠️ Low-Stock Alert System</text>
+    </g>
+    <g transform="translate(566, 0)">
+      <rect width="204" height="28" rx="6" fill="rgba(0, 217, 255, 0.06)" stroke="#00D9FF" stroke-width="0.8" />
+      <text x="102" y="18" text-anchor="middle" font-size="10.5" font-weight="700" fill="#EAF2F2">📈 Inventory Level Analytics</text>
+    </g>
+  </g>
+</svg>

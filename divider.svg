@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 20" width="100%" height="20">
+  <defs>
+    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5A0" stop-opacity="0" />
+      <stop offset="40%" stop-color="#00F5A0" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#00D9FF" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#00F5A0" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00F5A0" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* Traveling Photon Pulse */
+    .photon-pulse {
+      animation: photonTravel 4s ease-in-out infinite;
+    }
+    @keyframes photonTravel {
+      0% { transform: translateX(40px); opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { transform: translateX(780px); opacity: 0; }
+    }
+  </style>
+
+  <!-- Base Divider Line -->
+  <line x1="40" y1="10" x2="780" y2="10" stroke="url(#divGrad)" stroke-width="1.5" />
+
+  <!-- Center Emblem -->
+  <circle cx="410" cy="10" r="4" fill="#00F5A0" />
+  <circle cx="410" cy="10" r="7" fill="none" stroke="#00D9FF" stroke-width="1" opacity="0.6" />
+
+  <!-- Traveling Glowing Pulse -->
+  <circle class="photon-pulse" cx="0" cy="10" r="2.5" fill="#00D9FF" />
+</svg>

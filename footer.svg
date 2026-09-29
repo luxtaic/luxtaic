@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1720" />
+      <stop offset="100%" stop-color="#0B0F14" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600;700&amp;display=swap');
+    text { font-family: 'Fira Code', monospace; }
+
+    .foot-cursor {
+      animation: fCursor 0.9s step-end infinite;
+    }
+    @keyframes fCursor {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* Command cycling sequence */
+    .cmd-seq1 { animation: cSeq1 12s infinite; }
+    .cmd-seq2 { animation: cSeq2 12s infinite; }
+
+    @keyframes cSeq1 {{
+      0%, 48% { opacity: 1; }
+      52%, 100% { opacity: 0; }
+    }}
+    @keyframes cSeq2 {{
+      0%, 48% { opacity: 0; }
+      52%, 100% { opacity: 1; }
+    }}
+  </style>
+
+  <rect width="758" height="138" x="1" y="1" rx="10" fill="url(#footBg)" stroke="#00F5A0" stroke-width="1" stroke-opacity="0.3" />
+
+  <g transform="translate(24, 28)" font-size="12">
+    <!-- Window buttons -->
+    <circle cx="0" cy="0" r="4" fill="#EF4444" />
+    <circle cx="14" cy="0" r="4" fill="#F59E0B" />
+    <circle cx="28" cy="0" r="4" fill="#10B981" />
+    <text x="46" y="4" font-size="11" fill="#8B949E">git.status // dev.session</text>
+  </g>
+
+  <!-- Frame 1: git status -->
+  <g class="cmd-seq1" transform="translate(24, 60)" font-size="12.5">
+    <text x="0" y="0" fill="#00F5A0" font-weight="700">sreehari@dev:~$ git status</text>
+    <text x="0" y="22" fill="#8B949E">On branch learning</text>
+    <text x="0" y="44" fill="#EAF2F2">nothing to commit, but always something to build.</text>
+    <rect x="365" y="32" width="7" height="14" fill="#00F5A0" class="foot-cursor" />
+  </g>
+
+  <!-- Frame 2: git push sequence -->
+  <g class="cmd-seq2" transform="translate(24, 60)" font-size="12.5">
+    <text x="0" y="0" fill="#00D9FF" font-weight="700">sreehari@dev:~$ git commit -m "keep learning" &amp;&amp; git push origin main</text>
+    <text x="0" y="22" fill="#8B949E">Enumerating objects: 100% done • Remote origin synced</text>
+    <text x="0" y="44" fill="#00F5A0">✓ Ready to ship the next commit.</text>
+    <rect x="250" y="32" width="7" height="14" fill="#00F5A0" class="foot-cursor" />
+  </g>
+</svg>

@@ -1,29 +1,40 @@
 <div align="center">
 
   <!-- ======================================================== -->
-  <!-- 1. ANIMATED HERO SECTION (PREFERS-COLOR-SCHEME) -->
+  <!-- 1. ADVANCED LIVING HERO (PREFERS-COLOR-SCHEME) -->
   <!-- ======================================================== -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=3">
-    <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=3">
-    <img src="banner.svg?v=3" alt="Sreehari B // BCA AI & Data Science Student & Developer" width="100%" style="max-width: 1280px; height: auto;">
+    <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=4">
+    <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=4">
+    <img src="banner.svg?v=4" alt="Sreehari B // BCA AI & Data Science Student & Developer" width="100%" style="max-width: 1280px; height: auto;">
   </picture>
 
   <br><br>
 
-  <!-- Quick Identity & Status Pills -->
+  <!-- Status Telemetry Badges -->
   <p align="center">
-    <img src="https://img.shields.io/badge/IDENTITY-BCA%20(AI%20%26%20DATA%20SCIENCE)-00F5A0?style=for-the-badge&logo=googlescholar&logoColor=0B0F14&labelColor=0B0F14" alt="Identity" />
-    <img src="https://img.shields.io/badge/COLLEGE-ASIAN%20SCHOOL%20OF%20BUSINESS-00D9FF?style=for-the-badge&logo=academic-tree&logoColor=00D9FF&labelColor=0B0F14" alt="College" />
+    <img src="https://img.shields.io/badge/DEGREE-BCA%20(AI%20%26%20DATA%20SCIENCE)-00F5A0?style=for-the-badge&logo=googlescholar&logoColor=0B0F14&labelColor=0B0F14" alt="Degree" />
+    <img src="https://img.shields.io/badge/CAMPUS-ASIAN%20SCHOOL%20OF%20BUSINESS-00D9FF?style=for-the-badge&logo=academic-tree&logoColor=00D9FF&labelColor=0B0F14" alt="Campus" />
     <img src="https://img.shields.io/badge/BATCH-2025--2029-00C896?style=for-the-badge&labelColor=0B0F14" alt="Batch" />
-    <img src="https://img.shields.io/badge/STATUS-BUILDING%20SMARTCART-00F5A0?style=for-the-badge&logo=android&logoColor=00F5A0&labelColor=0B0F14" alt="Project Status" />
+    <img src="https://img.shields.io/badge/BUILDING-SMARTCART%20v1-00F5A0?style=for-the-badge&logo=android&logoColor=00F5A0&labelColor=0B0F14" alt="Active Project" />
   </p>
 
+</div>
+
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
 
 ### 👨‍💻 About Me
+
+<div align="center">
+  <!-- Futuristic About Me Terminal Panel with Sequential Typing Reveal -->
+  <img src="about.svg?v=4" alt="About Sreehari Terminal" width="100%" style="max-width: 760px; height: auto;" />
+</div>
+
+<br>
 
 > Hi, I'm **Sreehari** 👋  
 >  
@@ -45,18 +56,26 @@
   </p>
 </div>
 
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
+</div>
+
 ---
 
 <div align="center">
 
   <!-- ======================================================== -->
-  <!-- 2. DEVELOPER ID CARD (SWINGING LANYARD) -->
+  <!-- 2. HOLOGRAPHIC DEVELOPER ID LANYARD -->
   <!-- ======================================================== -->
   <h3>🪪 Developer ID &amp; Student Pass</h3>
-  <p><em>Personal student &amp; builder badge with holographic physics</em></p>
+  <p><em>Holographic shine sweep • Damped pendulum physics • Slow ambient floating</em></p>
 
-  <img src="lanyard.svg?v=3" alt="Sreehari B Developer ID Card" width="340px" style="max-width: 100%; height: auto;" />
+  <img src="lanyard.svg?v=4" alt="Sreehari B Developer ID Card" width="340px" style="max-width: 100%; height: auto;" />
 
+</div>
+
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -72,6 +91,10 @@
 → Data Analytics
 → GitHub Actions & developer workflows
 ```
+
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
+</div>
 
 ---
 
@@ -125,14 +148,25 @@
 
 </div>
 
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
+</div>
+
 ---
 
 ### 🛒 Current Project — SmartCart
 
+<div align="center">
+  <!-- Dynamic Architecture Showcase Card with Moving Circuit Photons -->
+  <img src="smartcart.svg?v=4" alt="SmartCart Architecture Showcase" width="100%" style="max-width: 820px; height: auto;" />
+</div>
+
+<br>
+
 <table>
   <tr>
     <td>
-      <h3>⚡ SmartCart-v1 <small><code>Actively Building • Current Project</code></small></h3>
+      <h3>⚡ SmartCart-v1 <small><code>● BUILDING NOW</code></small></h3>
       <p><strong>Smart inventory, billing and stock management system for small grocery and retail businesses.</strong></p>
       <p>SmartCart is engineered to streamline business operations for local store owners, replacing manual ledgers with an intuitive Android application that links sales directly to live stock data.</p>
       <p><strong>Key Features:</strong></p>
@@ -155,19 +189,36 @@
   </tr>
 </table>
 
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
+</div>
+
 ---
 
 ### 📂 Featured Repositories
 
-| Project | Description | Technology Stack | Repository |
-| :--- | :--- | :--- | :---: |
-| **[LostLink](https://github.com/luxtaic/LostLink)** | Static lost-and-found web application for reporting, searching, and managing lost and found items. | `HTML` `CSS` `JavaScript` `localStorage` | [View Code →](https://github.com/luxtaic/LostLink) |
-| **[Portfolio](https://github.com/luxtaic/Portfolio)** | Responsive personal developer portfolio showcasing projects, skills, certifications, and learning journey. | `HTML` `CSS` `JavaScript` | [View Code →](https://github.com/luxtaic/Portfolio) |
-| **[luxtaic Profile](https://github.com/luxtaic/luxtaic)** | Animated developer hub featuring custom SVG assets, automated telemetry, and GitHub Action workflows. | `SVG` `CSS` `GitHub Actions` | [View Code →](https://github.com/luxtaic/luxtaic) |
+| Project | Description | Technology Stack | Status | Repository |
+| :--- | :--- | :--- | :---: | :---: |
+| **[LostLink](https://github.com/luxtaic/LostLink)** | Static lost-and-found web application for reporting, searching, and managing lost and found items. | `HTML` `CSS` `JavaScript` `localStorage` | <code>● MAINTAINED</code> | [View Code →](https://github.com/luxtaic/LostLink) |
+| **[Portfolio](https://github.com/luxtaic/Portfolio)** | Responsive personal developer portfolio showcasing projects, skills, certifications, and learning journey. | `HTML` `CSS` `JavaScript` | <code>● ACTIVE</code> | [View Code →](https://github.com/luxtaic/Portfolio) |
+| **[luxtaic Profile](https://github.com/luxtaic/luxtaic)** | Animated developer hub featuring custom SVG assets, automated telemetry, and GitHub Action workflows. | `SVG` `CSS` `GitHub Actions` | <code>● ACTIVE</code> | [View Code →](https://github.com/luxtaic/luxtaic) |
+
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
+</div>
 
 ---
 
-### 📜 Learning &amp; Certifications
+### 🗺️ Learning Journey &amp; Milestones
+
+<div align="center">
+  <!-- Self-Drawing Glowing Circuit Timeline -->
+  <img src="timeline.svg?v=4" alt="Learning Journey Timeline" width="100%" style="max-width: 820px; height: auto;" />
+</div>
+
+<br>
+
+### 📜 Certifications &amp; Learning Credentials
 
 A collection of verified learning milestones, professional certificates, and technical foundations:
 
@@ -184,6 +235,10 @@ A collection of verified learning milestones, professional certificates, and tec
 - 🎓 **AI for Business Professionals**
 - 🎓 **Professional Networking for Career Growth**
 
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
+</div>
+
 ---
 
 ### 📊 Real-Time GitHub Activity
@@ -192,7 +247,7 @@ A collection of verified learning milestones, professional certificates, and tec
 
   <p><em>Grounded in real GitHub data • Automatically synced via GitHub Actions</em></p>
 
-  <img src="stats.svg?v=3" alt="Real GitHub Activity &amp; Telemetry" width="100%" style="max-width: 680px; height: auto;" />
+  <img src="stats.svg?v=4" alt="Real GitHub Activity &amp; Telemetry" width="100%" style="max-width: 680px; height: auto;" />
 
   <br><br>
 
@@ -214,6 +269,10 @@ A collection of verified learning milestones, professional certificates, and tec
 
 </div>
 
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
+</div>
+
 ---
 
 ### 🐍 Contribution Matrix
@@ -225,12 +284,16 @@ A collection of verified learning milestones, professional certificates, and tec
   <!-- Controlled container width to prevent massive empty vertical space -->
   <div style="max-width: 840px; margin: 0 auto;">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake-dark.svg?v=3">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=3">
-      <img src="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=3" alt="Contribution Snake Matrix" width="100%" style="max-width: 820px; height: auto;">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake-dark.svg?v=4">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=4">
+      <img src="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=4" alt="Contribution Snake Matrix" width="100%" style="max-width: 820px; height: auto;">
     </picture>
   </div>
 
+</div>
+
+<div align="center">
+  <img src="divider.svg?v=4" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -261,7 +324,14 @@ A collection of verified learning milestones, professional certificates, and tec
 
 </div>
 
----
+<br>
+
+<div align="center">
+  <!-- Mini Animated Terminal Footer -->
+  <img src="footer.svg?v=4" alt="Terminal Session Footer" width="100%" style="max-width: 760px; height: auto;" />
+</div>
+
+<br>
 
 <div align="center">
   <p><em>“Code. Coffee. Repeat.<br>Turning curiosity into clean code.”</em></p>

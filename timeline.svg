@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tlBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1720" />
+      <stop offset="100%" stop-color="#0B0F14" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&amp;family=Inter:wght@600;700;800;900&amp;display=swap');
+    text { font-family: 'Inter', sans-serif; }
+    .mono { font-family: 'Fira Code', monospace; }
+
+    /* Animated Drawing Line */
+    .timeline-path {
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      animation: drawTimeline 2.5s ease-out forwards;
+    }
+    @keyframes drawTimeline {
+      to { stroke-dashoffset: 0; }
+    }
+
+    .node-pulse {
+      animation: nPulse 2s ease-in-out infinite alternate;
+    }
+    @keyframes nPulse {
+      0% { transform: scale(0.9); opacity: 0.7; }
+      100% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 4px #00F5A0); }
+    }
+  </style>
+
+  <rect width="818" height="218" x="1" y="1" rx="14" fill="url(#tlBg)" stroke="#00F5A0" stroke-width="1.2" stroke-opacity="0.3" />
+
+  <!-- Header -->
+  <text x="24" y="32" font-size="13" font-weight="800" fill="#00F5A0" letter-spacing="1.2">// LEARNING TIMELINE &amp; MILESTONES</text>
+  <text x="796" y="32" text-anchor="end" font-size="10.5" font-weight="700" fill="#00D9FF" class="mono">2025 → 2026+</text>
+  <line x1="24" y1="44" x2="796" y2="44" stroke="#00F5A0" stroke-width="1" stroke-opacity="0.15" />
+
+  <!-- Animated Circuit Path -->
+  <path class="timeline-path" d="M 60 90 L 380 90 L 420 150 L 760 150" fill="none" stroke="#00F5A0" stroke-width="2.5" />
+
+  <!-- Node 2025: Foundations -->
+  <g transform="translate(60, 90)">
+    <circle cx="0" cy="0" r="7" fill="#00F5A0" class="node-pulse" />
+    <circle cx="0" cy="0" r="3.5" fill="#0B0F14" />
+    <rect x="-10" y="-36" width="60" height="22" rx="4" fill="#00F5A0" />
+    <text x="20" y="-22" text-anchor="middle" font-size="11" font-weight="900" fill="#0B0F14">2025</text>
+  </g>
+
+  <!-- 2025 Milestones -->
+  <g transform="translate(130, 72)" font-size="11" font-weight="700">
+    <text x="0" y="0" fill="#EAF2F2">✦ BCA AI &amp; Data Science</text>
+    <text x="0" y="22" fill="#8B949E">✦ Python, Java, Git &amp; Web Dev</text>
+  </g>
+
+  <!-- Branch Transition Node -->
+  <g transform="translate(420, 150)">
+    <circle cx="0" cy="0" r="7" fill="#00D9FF" class="node-pulse" style="animation-delay: 0.5s;" />
+    <circle cx="0" cy="0" r="3.5" fill="#0B0F14" />
+    <rect x="-10" y="16" width="60" height="22" rx="4" fill="#00D9FF" />
+    <text x="20" y="30" text-anchor="middle" font-size="11" font-weight="900" fill="#0B0F14">2026</text>
+  </g>
+
+  <!-- 2026 Milestones -->
+  <g transform="translate(490, 142)" font-size="11" font-weight="700">
+    <text x="0" y="0" fill="#00F5A0">✦ SmartCart (Inventory &amp; Billing App)</text>
+    <text x="0" y="22" fill="#EAF2F2">✦ AI, Data Science &amp; Machine Learning</text>
+  </g>
+</svg>
