@@ -4,9 +4,9 @@
   <!-- 🎨 DYNAMIC DUAL-MODE ANIMATED BANNER (PREFERS-COLOR-SCHEME) -->
   <!-- ======================================================== -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=1">
-    <img src="banner.svg?v=1" alt="Sreehari B // Full-Stack Developer Banner" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=2">
+    <img src="banner.svg?v=2" alt="Sreehari B // Full-Stack Developer Banner" width="100%">
   </picture>
 
   <br><br>
@@ -42,7 +42,7 @@
   <h2>🪪 Verified Developer Lanyard &amp; Access Pass</h2>
   <p><em>Physics-based swinging ID badge rendered in pure SVG with holographic shine sweep</em></p>
   
-  <img src="lanyard.svg?v=1" alt="Sreehari B Lanyard ID Badge" width="360px" />
+  <img src="lanyard.svg?v=2" alt="Sreehari B Lanyard ID Badge" width="360px" />
 </div>
 
 ---
@@ -54,10 +54,10 @@
   <table border="0">
     <tr>
       <td align="center">
-        <img src="stats.svg?v=1" alt="GitHub Telemetry Stats" width="460px" />
+        <img src="stats.svg?v=2" alt="GitHub Telemetry Stats" width="460px" />
       </td>
       <td align="center">
-        <img src="langs.svg?v=1" alt="Top Languages Stats" width="460px" />
+        <img src="langs.svg?v=2" alt="Top Languages Stats" width="460px" />
       </td>
     </tr>
   </table>
@@ -65,7 +65,7 @@
   <br>
 
   <!-- Trophies Showcase -->
-  <img src="trophies.svg?v=1" alt="Achievement Trophies" width="100%" />
+  <img src="trophies.svg?v=2" alt="Achievement Trophies" width="100%" />
 
 </div>
 
@@ -86,9 +86,9 @@
   <p><em>Automated daily by Platane/snk via GitHub Actions</em></p>
 
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake-dark.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=1">
-    <img src="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=1" alt="Contribution Snake Animation" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake-dark.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=2">
+    <img src="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=2" alt="Contribution Snake Animation" width="100%">
   </picture>
 </div>
 

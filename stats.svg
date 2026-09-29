@@ -34,14 +34,14 @@
       to { stroke-dashoffset: 28; }
     }
 
-    /* Staggered Row Slide In */
+    /* Staggered Row Fade In (pure opacity so Y positions never collapse) */
     .stat-row {
       opacity: 0;
-      transform: translateX(-15px);
-      animation: slideInRow 0.6s ease-out forwards;
+      animation: fadeInRow 0.6s ease-out forwards;
     }
-    @keyframes slideInRow {
-      to { opacity: 1; transform: translateX(0); }
+    @keyframes fadeInRow {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
   </style>
 
@@ -64,34 +64,34 @@
     <text x="0" y="24" text-anchor="middle" font-size="9" font-weight="700" fill="#00FF88" letter-spacing="1">RANK</text>
   </g>
 
-  <!-- Right: Stat Rows with Staggered Slide In -->
+  <!-- Right: Stat Rows with Distinct Absolute Y Coordinates (cy / y) -->
   <g transform="translate(175, 72)">
-    <!-- Row 1: Commits -->
-    <g class="stat-row" style="animation-delay: 0.2s;">
+    <!-- Row 1: Commits (y=0) -->
+    <g class="stat-row" style="animation-delay: 0.15s;">
       <circle cx="10" cy="0" r="4" fill="#00FF88" />
       <text x="24" y="4" font-size="12.5" font-weight="600" fill="#F0FDF4">Total Lifetime Commits</text>
       <text x="275" y="4" text-anchor="end" font-size="13.5" font-weight="800" fill="#00FF88" class="mono">850+</text>
     </g>
 
-    <!-- Row 2: Stars -->
-    <g class="stat-row" transform="translate(0, 28)" style="animation-delay: 0.4s;">
-      <circle cx="10" cy="0" r="4" fill="#00F0FF" />
-      <text x="24" y="4" font-size="12.5" font-weight="600" fill="#F0FDF4">Total Stars Earned</text>
-      <text x="275" y="4" text-anchor="end" font-size="13.5" font-weight="800" fill="#00F0FF" class="mono">120+</text>
+    <!-- Row 2: Stars (y=28) -->
+    <g class="stat-row" style="animation-delay: 0.3s;">
+      <circle cx="10" cy="28" r="4" fill="#00F0FF" />
+      <text x="24" y="32" font-size="12.5" font-weight="600" fill="#F0FDF4">Total Stars Earned</text>
+      <text x="275" y="32" text-anchor="end" font-size="13.5" font-weight="800" fill="#00F0FF" class="mono">120+</text>
     </g>
 
-    <!-- Row 3: Pull Requests -->
-    <g class="stat-row" transform="translate(0, 56)" style="animation-delay: 0.6s;">
-      <circle cx="10" cy="0" r="4" fill="#10B981" />
-      <text x="24" y="4" font-size="12.5" font-weight="600" fill="#F0FDF4">Pull Requests Contributed</text>
-      <text x="275" y="4" text-anchor="end" font-size="13.5" font-weight="800" fill="#10B981" class="mono">45+</text>
+    <!-- Row 3: Pull Requests (y=56) -->
+    <g class="stat-row" style="animation-delay: 0.45s;">
+      <circle cx="10" cy="56" r="4" fill="#10B981" />
+      <text x="24" y="60" font-size="12.5" font-weight="600" fill="#F0FDF4">Pull Requests Contributed</text>
+      <text x="275" y="60" text-anchor="end" font-size="13.5" font-weight="800" fill="#10B981" class="mono">45+</text>
     </g>
 
-    <!-- Row 4: Contributed Repos -->
-    <g class="stat-row" transform="translate(0, 84)" style="animation-delay: 0.8s;">
-      <circle cx="10" cy="0" r="4" fill="#F59E0B" />
-      <text x="24" y="4" font-size="12.5" font-weight="600" fill="#F0FDF4">Repositories Architected</text>
-      <text x="275" y="4" text-anchor="end" font-size="13.5" font-weight="800" fill="#F59E0B" class="mono">15+</text>
+    <!-- Row 4: Contributed Repos (y=84) -->
+    <g class="stat-row" style="animation-delay: 0.6s;">
+      <circle cx="10" cy="84" r="4" fill="#F59E0B" />
+      <text x="24" y="88" font-size="12.5" font-weight="600" fill="#F0FDF4">Repositories Architected</text>
+      <text x="275" y="88" text-anchor="end" font-size="13.5" font-weight="800" fill="#F59E0B" class="mono">15+</text>
     </g>
   </g>
 </svg>
