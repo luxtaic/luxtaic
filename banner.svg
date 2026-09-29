@@ -280,11 +280,13 @@
       <text x="250" y="24" font-size="13" fill="#EAF2F2" font-weight="600">session.init --profile</text>
       <rect x="420" y="12" width="8" height="15" fill="#00F5A0" class="block-cursor" />
 
-      <!-- Decorative micro glitch symbol -->
-      <g class="micro-glitch" transform="translate(555, 12)">
-        <rect width="110" height="24" rx="12" fill="rgba(0, 245, 160, 0.12)" stroke="#00F5A0" stroke-width="0.8" />
-        <circle cx="12" cy="12" r="3.5" fill="#00F5A0" class="pulse-dot" />
-        <text x="24" y="16" font-size="10.5" fill="#00F5A0" font-weight="700">STUDENT / DEV</text>
+      <!-- Decorative micro glitch symbol (wrapped to isolate CSS transform from position) -->
+      <g transform="translate(555, 7)">
+        <g class="micro-glitch">
+          <rect width="110" height="24" rx="12" fill="rgba(0, 245, 160, 0.12)" stroke="#00F5A0" stroke-width="0.8" />
+          <circle cx="12" cy="12" r="3.5" fill="#00F5A0" class="pulse-dot" />
+          <text x="24" y="16" font-size="10.5" fill="#00F5A0" font-weight="700">STUDENT / DEV</text>
+        </g>
       </g>
     </g>
 

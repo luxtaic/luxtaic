@@ -4,9 +4,9 @@
   <!-- 1. ADVANCED LIVING HERO (PREFERS-COLOR-SCHEME) -->
   <!-- ======================================================== -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=6">
-    <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=6">
-    <img src="banner.svg?v=6" alt="Sreehari B // BCA AI & Data Science Student & Developer" width="100%" style="max-width: 1280px; height: auto;">
+    <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=7">
+    <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=7">
+    <img src="banner.svg?v=7" alt="Sreehari B // BCA AI & Data Science Student & Developer" width="100%" style="max-width: 1280px; height: auto;">
   </picture>
 
   <br><br>
@@ -22,7 +22,7 @@
 </div>
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -31,7 +31,7 @@
 
 <div align="center">
   <!-- Futuristic About Me Terminal Panel with Sequential Typing Reveal -->
-  <img src="about.svg?v=6" alt="About Sreehari Terminal" width="100%" style="max-width: 760px; height: auto;" />
+  <img src="about.svg?v=7" alt="About Sreehari Terminal" width="100%" style="max-width: 760px; height: auto;" />
 </div>
 
 <br>
@@ -57,7 +57,7 @@
 </div>
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -70,12 +70,12 @@
   <h3>🪪 Developer ID &amp; Student Pass</h3>
   <p><em>Holographic shine sweep • Damped pendulum physics • Slow ambient floating</em></p>
 
-  <img src="lanyard.svg?v=6" alt="Sreehari B Developer ID Card" width="340px" style="max-width: 100%; height: auto;" />
+  <img src="lanyard.svg?v=7" alt="Sreehari B Developer ID Card" width="340px" style="max-width: 100%; height: auto;" />
 
 </div>
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -93,7 +93,7 @@
 ```
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -149,7 +149,7 @@
 </div>
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -158,7 +158,7 @@
 
 <div align="center">
   <!-- Dynamic Architecture Showcase Card with Moving Circuit Photons -->
-  <img src="smartcart.svg?v=6" alt="SmartCart Architecture Showcase" width="100%" style="max-width: 820px; height: auto;" />
+  <img src="smartcart.svg?v=7" alt="SmartCart Architecture Showcase" width="100%" style="max-width: 820px; height: auto;" />
 </div>
 
 <br>
@@ -190,7 +190,7 @@
 </table>
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -204,7 +204,7 @@
 | **[luxtaic Profile](https://github.com/luxtaic/luxtaic)** | Animated developer hub featuring custom SVG assets, automated telemetry, and GitHub Action workflows. | `SVG` `CSS` `GitHub Actions` | <code>● ACTIVE</code> | [View Code →](https://github.com/luxtaic/luxtaic) |
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -213,7 +213,7 @@
 
 <div align="center">
   <!-- Self-Drawing Glowing Circuit Timeline -->
-  <img src="timeline.svg?v=6" alt="Learning Journey Timeline" width="100%" style="max-width: 820px; height: auto;" />
+  <img src="timeline.svg?v=7" alt="Learning Journey Timeline" width="100%" style="max-width: 820px; height: auto;" />
 </div>
 
 <br>
@@ -236,7 +236,7 @@ A collection of verified learning milestones, professional certificates, and tec
 - 🎓 **Professional Networking for Career Growth**
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -247,7 +247,7 @@ A collection of verified learning milestones, professional certificates, and tec
 
   <p><em>Grounded in real GitHub data • Automatically synced via GitHub Actions</em></p>
 
-  <img src="stats.svg?v=6" alt="Real GitHub Activity &amp; Telemetry" width="100%" style="max-width: 680px; height: auto;" />
+  <img src="stats.svg?v=7" alt="Real GitHub Activity &amp; Telemetry" width="100%" style="max-width: 680px; height: auto;" />
 
   <br><br>
 
@@ -270,7 +270,7 @@ A collection of verified learning milestones, professional certificates, and tec
 </div>
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -284,16 +284,16 @@ A collection of verified learning milestones, professional certificates, and tec
   <!-- Controlled container width to prevent massive empty vertical space -->
   <div style="max-width: 840px; margin: 0 auto;">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake-dark.svg?v=6">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=6">
-      <img src="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=6" alt="Contribution Snake Matrix" width="100%" style="max-width: 820px; height: auto;">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake-dark.svg?v=7">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=7">
+      <img src="https://raw.githubusercontent.com/luxtaic/luxtaic/output/github-snake.svg?v=7" alt="Contribution Snake Matrix" width="100%" style="max-width: 820px; height: auto;">
     </picture>
   </div>
 
 </div>
 
 <div align="center">
-  <img src="divider.svg?v=6" alt="Divider" width="100%" style="max-width: 820px;" />
+  <img src="divider.svg?v=7" alt="Divider" width="100%" style="max-width: 820px;" />
 </div>
 
 ---
@@ -328,7 +328,7 @@ A collection of verified learning milestones, professional certificates, and tec
 
 <div align="center">
   <!-- Mini Animated Terminal Footer -->
-  <img src="footer.svg?v=6" alt="Terminal Session Footer" width="100%" style="max-width: 760px; height: auto;" />
+  <img src="footer.svg?v=7" alt="Terminal Session Footer" width="100%" style="max-width: 760px; height: auto;" />
 </div>
 
 <br>
