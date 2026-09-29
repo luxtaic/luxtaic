@@ -17,19 +17,6 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
-
-    /* Command cycling sequence */
-    .cmd-seq1 { animation: cSeq1 12s infinite; }
-    .cmd-seq2 { animation: cSeq2 12s infinite; }
-
-    @keyframes cSeq1 {{
-      0%, 48% { opacity: 1; }
-      52%, 100% { opacity: 0; }
-    }}
-    @keyframes cSeq2 {{
-      0%, 48% { opacity: 0; }
-      52%, 100% { opacity: 1; }
-    }}
   </style>
 
   <rect width="758" height="138" x="1" y="1" rx="10" fill="url(#footBg)" stroke="#00F5A0" stroke-width="1" stroke-opacity="0.3" />
@@ -42,16 +29,18 @@
     <text x="46" y="4" font-size="11" fill="#8B949E">git.status // dev.session</text>
   </g>
 
-  <!-- Frame 1: git status -->
-  <g class="cmd-seq1" transform="translate(24, 60)" font-size="12.5">
+  <!-- Frame 1: git status (Visible from 0s to 5.5s, Hidden from 5.5s to 11s) -->
+  <g transform="translate(24, 60)" font-size="12.5" opacity="1">
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.48;0.52;0.98;1" dur="11s" repeatCount="indefinite" />
     <text x="0" y="0" fill="#00F5A0" font-weight="700">sreehari@dev:~$ git status</text>
     <text x="0" y="22" fill="#8B949E">On branch learning</text>
     <text x="0" y="44" fill="#EAF2F2">nothing to commit, but always something to build.</text>
     <rect x="365" y="32" width="7" height="14" fill="#00F5A0" class="foot-cursor" />
   </g>
 
-  <!-- Frame 2: git push sequence -->
-  <g class="cmd-seq2" transform="translate(24, 60)" font-size="12.5">
+  <!-- Frame 2: git push sequence (Hidden from 0s to 5.5s, Visible from 5.5s to 11s) -->
+  <g transform="translate(24, 60)" font-size="12.5" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.48;0.52;0.98;1" dur="11s" repeatCount="indefinite" />
     <text x="0" y="0" fill="#00D9FF" font-weight="700">sreehari@dev:~$ git commit -m "keep learning" &amp;&amp; git push origin main</text>
     <text x="0" y="22" fill="#8B949E">Enumerating objects: 100% done • Remote origin synced</text>
     <text x="0" y="44" fill="#00F5A0">✓ Ready to ship the next commit.</text>
