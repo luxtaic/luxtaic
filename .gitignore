@@ -1,0 +1,5 @@
+# Python artifacts & intermediate images
+*.py
+*.png
+__pycache__/
+.pytest_cache/
