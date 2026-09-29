@@ -23,10 +23,10 @@
     .led-pulse {
       animation: ledBlink 1.6s ease-in-out infinite alternate;
     }
-    @keyframes ledBlink {{
+    @keyframes ledBlink {
       0% { opacity: 0.3; transform: scale(0.85); }
       100% { opacity: 1; transform: scale(1.2); filter: drop-shadow(0 0 6px #00F5A0); }
-    }}
+    }
 
     /* Animated Traveling Photon on Circuit Line */
     .photon-dash {
@@ -55,7 +55,7 @@
     <text x="26" y="17" font-size="11" font-weight="900" fill="#00F5A0" letter-spacing="1.2">BUILDING NOW</text>
 
     <text x="155" y="18" font-size="16" font-weight="900" fill="#EAF2F2">SmartCart-v1 🛒</text>
-    <text x="818 - 48" y="18" text-anchor="end" font-size="11" font-weight="700" fill="#00D9FF" class="mono">ACTIVE DEVELOPMENT</text>
+    <text x="770" y="18" text-anchor="end" font-size="11" font-weight="700" fill="#00D9FF" class="mono">ACTIVE DEVELOPMENT</text>
   </g>
 
   <!-- Truthful Description -->
