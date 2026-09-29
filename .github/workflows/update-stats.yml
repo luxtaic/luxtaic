@@ -1,0 +1,68 @@
+name: Update Real GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # Run daily at 06:00 UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-stats:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Fetch real GitHub statistics & update stats.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python -c "
+          import urllib.request, json, os
+
+          headers = {'User-Agent': 'GitHub-Actions', 'Authorization': 'Bearer ' + os.environ['GITHUB_TOKEN']}
+          try:
+              req = urllib.request.Request('https://api.github.com/users/luxtaic', headers=headers)
+              with urllib.request.urlopen(req) as resp:
+                  user = json.loads(resp.read().decode())
+              
+              req_repos = urllib.request.Request('https://api.github.com/users/luxtaic/repos?per_page=100', headers=headers)
+              with urllib.request.urlopen(req_repos) as resp:
+                  repos = json.loads(resp.read().decode())
+
+              public_repos = user.get('public_repos', 0)
+              followers = user.get('followers', 0)
+              following = user.get('following', 0)
+              stars = sum(r.get('stargazers_count', 0) for r in repos)
+
+              from build_truthful_assets import build_truthful_stats
+              svg_content = build_truthful_stats(repos=public_repos, followers=followers, following=following, stars=stars)
+              with open('stats.svg', 'w', encoding='utf-8') as f:
+                  f.write(svg_content)
+              print(f'Successfully updated stats.svg: Repos={public_repos}, Followers={followers}, Following={following}, Stars={stars}')
+          except Exception as e:
+              print('Error updating stats:', e)
+          "
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add stats.svg
+          if git diff --staged --quiet; then
+            echo "No stats changes detected."
+          else
+            git commit -m "chore(stats): update real GitHub telemetry metrics"
+            git push
+          fi
